@@ -1,4 +1,4 @@
-Route::get('/video/{video_id}/{token}', function($video_id){
+Route::get('/video/{video_id}', function($video_id){
     
     $video = Video::find($video_id);
 
