@@ -10,6 +10,9 @@ Route::get('/video/{video_id}', function($video_id){
     );
 
     $contentType = "video/mp4";
+
+    # FILE_PATH MUST BE A REALLY SAFE PATH OR MAY OCCUR
+
     $path = '../storage/app/files/'.$video->file_path;
     $fullsize = filesize($path);
     $size = $fullsize;
